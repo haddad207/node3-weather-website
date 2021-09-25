@@ -11,7 +11,7 @@ const forecast = (lat, lng, callback) => {
     } else {
       callback(undefined, {
         // location: `${body.location.name}, ${body.location.region}, ${body.location.country}`,
-        answer: `${body.current.weather_descriptions[0]}. it is currently ${body.current.temperature} out, it fells like ${body.current.feelslike} `,
+        answer: `${body.current.weather_descriptions[0]}. it is currently ${body.current.temperature} out, it fells like ${body.current.feelslike} with a humidity percentage of ${body.current.humidity}`,
       });
     }
   });
